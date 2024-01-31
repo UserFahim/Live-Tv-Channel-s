@@ -3,8 +3,6 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-app.use(express.static('index.html'));
-
 app.get('/switchChannel/:channel', (req, res) => {
     const channel = req.params.channel;
 
